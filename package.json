@@ -1,0 +1,59 @@
+{
+  "name": "webfolio",
+  "version": "1.0.0-alpha.1",
+  "private": true,
+  "description": "my-web-portfolio",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dementeey/webfolio.git"
+  },
+  "author": "Anton Loyko (Dementeey)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dementeey/webfolio/issues"
+  },
+  "homepage": "https://github.com/Dementeey/webfolio#readme",
+  "devDependencies": {
+    "eslint": "6.4.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "prettier": "1.18.2"
+  },
+  "dependencies": {
+    "history": "4.10.1",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-jss": "10.0.0-alpha.24",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "BROWSER=none PORT=8888 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "now-dev": "react-scripts start",
+    "now-build": "react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
