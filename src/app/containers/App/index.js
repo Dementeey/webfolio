@@ -1,22 +1,19 @@
 import React from 'react'
 import injectSheet from 'react-jss'
 import styles from './styles'
+import Header from '../../components/Header'
+import Routes from './routes'
 
 function App({ classes }) {
   return (
-    <div className={classes.wrapper}>
-      <h2 className={classes.title}>Title</h2>
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className={classes.link}
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+    <div className={classes.app}>
+      <Header />
+
+      <main className={classes.content}>
+        <Routes />
+      </main>
+
+      <footer className={classes.footer}>Footer</footer>
     </div>
   )
 }

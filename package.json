@@ -26,6 +26,7 @@
     "prettier": "1.18.2"
   },
   "dependencies": {
+    "app": "^0.1.0",
     "history": "4.10.1",
     "react": "16.9.0",
     "react-dom": "16.9.0",

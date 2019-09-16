@@ -2,8 +2,8 @@ import React from 'react'
 import injectSheet from 'react-jss'
 import styles from './styles'
 
-function App({ classes }) {
-  return <div className={classes.wrapper}>Header</div>
+function Header({ classes }) {
+  return <header className={classes.wrapper}>Header</header>
 }
 
-export default injectSheet(styles)(App)
+export default injectSheet(styles)(Header)
