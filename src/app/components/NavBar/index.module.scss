@@ -1,0 +1,41 @@
+@import "src/assets/styles/var";
+@import "src/assets/styles/mixins";
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  height: $size-header-height;
+  background-color: $color-main-black;
+}
+
+.wrapper {
+  @include Wrapper();
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner_wrapper {
+
+}
+
+.link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-right: 15px;
+  color: $color-main-yellow;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $color-main-active;
+  }
+
+  &_active {
+    color: $color-main-active;
+  }
+}

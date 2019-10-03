@@ -1,9 +1,8 @@
 import React from 'react'
-import injectSheet from 'react-jss'
-import styles from './styles'
+import styles from './index.module.scss'
 
-function NotFound({ classes }) {
-  return <div className={classes.wrapper}>Oops... 404. This rout not found</div>
+function NotFound() {
+  return <div className={styles.wrapper}>Oops... 404. This rout not found</div>
 }
 
-export default injectSheet(styles)(NotFound)
+export default NotFound

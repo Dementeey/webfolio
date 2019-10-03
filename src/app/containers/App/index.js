@@ -1,21 +1,18 @@
 import React from 'react'
-import injectSheet from 'react-jss'
-import styles from './styles'
-import Header from '../../components/Header'
+import styles from './index.module.scss'
+import NavBar from '../../components/NavBar'
 import Routes from './routes'
 
-function App({ classes }) {
+function App() {
   return (
-    <div className={classes.app}>
-      <Header />
+    <>
+      <NavBar />
 
-      <main className={classes.content}>
+      <main className={styles.content}>
         <Routes />
       </main>
-
-      <footer className={classes.footer}>Footer</footer>
-    </div>
+    </>
   )
 }
 
-export default injectSheet(styles)(App)
+export default App

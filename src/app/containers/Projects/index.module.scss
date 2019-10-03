@@ -1,0 +1,6 @@
+@import "src/assets/styles/var";
+@import "src/assets/styles/mixins";
+
+.wrapper {
+ @include Wrapper();
+}

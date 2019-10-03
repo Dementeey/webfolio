@@ -1,0 +1,6 @@
+@import "src/assets/styles/var";
+
+.content {
+  overflow: auto;
+  height: calc(100vh - #{$size-header-height});
+}

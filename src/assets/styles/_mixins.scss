@@ -1,0 +1,10 @@
+@import "src/assets/styles/var";
+
+@mixin Wrapper {
+  width: $wrapper;
+
+  @media screen and (max-width: $wrapper) {
+    width: $wrapper-sm;
+  }
+}
+

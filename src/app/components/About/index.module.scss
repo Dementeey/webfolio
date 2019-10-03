@@ -1,0 +1,29 @@
+@import "src/assets/styles/var";
+@import "src/assets/styles/mixins";
+
+.about {
+  padding-top: 1px;
+}
+
+.title {
+  color: $color-main-black;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+}
+
+.avatar {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid $color-main-black;
+  border-radius: 50%;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}

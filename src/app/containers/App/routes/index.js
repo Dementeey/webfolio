@@ -5,7 +5,7 @@ import NotFound from 'app/containers/NotFound'
 
 function Routes() {
   const routes = config.map(({ exact = false, path, component: Component }) => (
-    <Route exact={exact} path={path} component={Component} />
+    <Route key={path} exact={exact} path={path} component={Component} />
   ))
 
   return (
