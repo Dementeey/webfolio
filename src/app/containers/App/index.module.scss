@@ -2,5 +2,5 @@
 
 .content {
   overflow: auto;
-  height: calc(100vh - #{$size-header-height});
+  height: $full-height;
 }

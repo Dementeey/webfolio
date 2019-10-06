@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './index.module.scss'
-import navRoutsConfig from 'data/navRoutsConfig'
-import navConfig from 'data/navConfig'
+import navRoutsConfig from 'data/navRouts.config'
+import navConfig from 'data/nav.config'
 
 function NavBar() {
   return (

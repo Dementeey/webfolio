@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './index.module.scss'
-import NavBar from '../../components/NavBar'
+import NavBar from 'app/components/NavBar'
 import Routes from './routes'
 
 function App() {
