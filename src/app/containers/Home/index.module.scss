@@ -5,3 +5,14 @@
   @include Wrapper();
   margin: 0 auto;
 }
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.link {
+  @include Button();
+  margin-right: 20px;
+}

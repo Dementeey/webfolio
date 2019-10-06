@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './index.module.scss'
-import navRoutsConfig from './navRoutsConfig'
-import navConfig from './navConfig'
+import navRoutsConfig from 'data/navRoutsConfig'
+import navConfig from 'data/navConfig'
 
 function NavBar() {
   return (
@@ -25,6 +25,7 @@ function NavBar() {
         <div className={styles.inner_wrapper}>
           {navConfig.map(({ label, link, title }) => (
             <a
+              key={link}
               href={link}
               target="_blank"
               title={title}

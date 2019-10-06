@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import config from './config'
+import config from 'data/config'
 import NotFound from 'app/containers/NotFound'
 
 function Routes() {

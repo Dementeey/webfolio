@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 1px dashed tomato;
+}
+
 html {
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;

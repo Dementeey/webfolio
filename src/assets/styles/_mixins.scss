@@ -8,3 +8,33 @@
   }
 }
 
+@mixin Button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid $color-main-black;
+  background-color: #fff;
+  color: $color-main-black;
+  cursor: pointer;
+  transition: all $transition-time;
+  text-decoration: none;
+
+  &:hover {
+    border-radius: 0;
+    color: $color-main-yellow;
+    background-color:$color-main-black;
+    transition: all $transition-time;
+  }
+
+  &:active {
+    border-radius: 0;
+    color: $color-main-active;
+    background-color:$color-main-black;
+    transition: all $transition-time;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    transition: all $transition-time;
+  }
+}

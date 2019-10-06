@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "anton-l",
+  "name": "webfolio",
   "builds": [
     {
       "src": "package.json",
