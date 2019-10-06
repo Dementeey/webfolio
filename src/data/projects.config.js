@@ -15,7 +15,7 @@ export default [
           `,
           returns: '(Array): Returns the new mapped array'
         },
-        example: `map([1, 2, 3])`,
+        example: `map([1, 2, 3]);`,
         code: `function map(value) {
   console.log('function map =>', value);
 }`

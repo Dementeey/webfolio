@@ -1,6 +1,6 @@
 @import "src/assets/styles/var";
 
 .content {
-  overflow: auto;
+  overflow-y: hidden;
   height: $full-height;
 }

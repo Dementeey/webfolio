@@ -19,15 +19,18 @@
 }
 
 .content {
-  padding: 20px;
+  padding: 20px 40px;
   width: calc(100vw - 300px);
   height: $full-height;
   transition: all $transition-time;
+  overflow-y: auto;
 }
 
 .title {
   color: $color-main-black;
   text-align: center;
+  padding: 20px 24px;
+  background-color: rgba(36, 41, 46, 0.21);
 }
 
 .fullscreen_content {
@@ -37,6 +40,7 @@
 
 .toggle_side_bar {
   position: absolute;
+  z-index: 100;
   top: 5px;
   left: 305px;
   transform: translateX(0);

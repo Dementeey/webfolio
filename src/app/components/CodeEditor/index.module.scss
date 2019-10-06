@@ -1,0 +1,14 @@
+@import "src/assets/styles/var";
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  max-width: 900px;
+}
+
+iframe {
+  margin-left: 30px;
+  border: 1px solid $color-main-black;
+  background-color: #002B36;
+}
