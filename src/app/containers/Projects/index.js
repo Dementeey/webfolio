@@ -4,18 +4,22 @@ import cls from 'classnames'
 
 import styles from './index.module.scss'
 import ProjectsSideBar from 'app/components/ProjectsSideBar'
+import CodeEditor from 'app/components/CodeEditor'
 import projects from 'data/projects.config'
 
 function Projects({ location }) {
   const [isOpen, setOpen] = useState(true)
 
-  function getTitle() {
+  function getProjectValue(key) {
+    const separator = '.'
     let result = ''
 
     projects.forEach(({ items }) => {
-      result = items.reduce((init, { hash, label }) => {
-        if (location.hash === `#${hash}`) {
-          return label
+      result = items.reduce((init, item) => {
+        if (location.hash === `#${item.hash}`) {
+          return key.includes(separator)
+            ? item[key.split(separator)[0]][key.split(separator)[1]]
+            : item[key]
         }
 
         return init
@@ -59,7 +63,9 @@ function Projects({ location }) {
           [styles.fullscreen_content]: !isOpen
         })}
       >
-        <h2 className={styles.title}>{getTitle()}</h2>
+        <h2 className={styles.title}>{getProjectValue('info.title')}</h2>
+
+        {location.hash && <CodeEditor value={getProjectValue('example')} />}
       </div>
     </div>
   )
