@@ -9,12 +9,7 @@ export default [
       {
         label: 'filter',
         hash: 'filter'
-      }
-    ]
-  },
-  {
-    title: 'Custom Lodash 2',
-    items: [
+      },
       {
         label: 'sort',
         hash: 'sort'

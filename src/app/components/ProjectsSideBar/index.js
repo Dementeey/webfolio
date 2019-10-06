@@ -48,7 +48,7 @@ function ProjectsSideBar({ path = '/projects', config = [] }) {
         {search ? (
           <Button onClick={onClearSearch}>Clear</Button>
         ) : (
-          <Button onClick={onSearch}>Search</Button>
+          <Button>Search</Button>
         )}
       </div>
 
