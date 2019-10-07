@@ -4,11 +4,12 @@ import cls from 'classnames'
 
 import styles from './index.module.scss'
 import ProjectsSideBar from 'app/components/ProjectsSideBar'
-import CodeEditor from 'app/components/CodeEditor'
+import Codepen from 'app/components/Codepen'
 import projects from 'data/projects.config'
 
 function Projects({ location }) {
   const [isOpen, setOpen] = useState(true)
+  const isRender = location.hash
 
   function getProjectValue(key) {
     const separator = '.'
@@ -59,13 +60,41 @@ function Projects({ location }) {
       </div>
 
       <div
-        className={cls(styles.content, {
-          [styles.fullscreen_content]: !isOpen
+        className={cls(styles.content_wrapper, {
+          [styles.content_wrapper_fullscreen]: !isOpen
         })}
       >
-        <h2 className={styles.title}>{getProjectValue('info.title')}</h2>
+        <div className={styles.content}>
+          {isRender && (
+            <>
+              <div className={styles.info}>
+                <h2 className={styles.title}>
+                  {getProjectValue('info.title')}
+                </h2>
+                <p className={styles.description}>
+                  {getProjectValue('info.description')}
+                </p>
 
-        {location.hash && <CodeEditor value={getProjectValue('example')} />}
+                <h3>Arguments:</h3>
+                <p className={styles.description}>
+                  {getProjectValue('info.arguments')}
+                </p>
+
+                <h3>Returns:</h3>
+                <p className={styles.description}>
+                  {getProjectValue('info.returns')}
+                </p>
+
+                <h3>Examples:</h3>
+                <p className={styles.description}>
+                  {getProjectValue('info.examples')}
+                </p>
+              </div>
+
+              <Codepen src={getProjectValue('src')} />
+            </>
+          )}
+        </div>
       </div>
     </div>
   )

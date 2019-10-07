@@ -3,22 +3,21 @@ export default [
     title: 'Custom Lodash Array',
     items: [
       {
-        label: 'map',
-        hash: 'map',
+        label: 'chunk',
+        hash: 'chunk',
         info: {
-          title: '.map(collection, [iteratee=_.identity])',
+          title: 'chunk(array, [size=1])',
           description:
-            'Creates an array of values by running each element in collection thru iteratee. The iteratee is invoked with three arguments: (value, index|key, collection).',
+            "Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.",
           arguments: `
-            collection (Array|Object): The collection to iterate over.
-            [iteratee=_.identity] (Function): The function invoked per iteration.
+            array (Array): The array to process.r.
+            [size=1] (number): The length of each chunk
           `,
-          returns: '(Array): Returns the new mapped array'
+          returns: '(Array): Returns the new array of chunks.',
+          examples:
+            "chunk(['a', 'b', 'c', 'd'], 2); // => [['a', 'b'], ['c', 'd']]"
         },
-        example: `map([1, 2, 3]);`,
-        code: `function map(value) {
-  console.log('function map =>', value);
-}`
+        src: 'abbbxGL'
       }
     ]
   }
