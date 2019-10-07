@@ -13,7 +13,6 @@
   "bugs": {
     "url": "https://github.com/Dementeey/webfolio/issues"
   },
-  "homepage": "https://github.com/Dementeey/webfolio#readme",
   "devDependencies": {
     "eslint": "6.4.0",
     "eslint-config-airbnb": "18.0.1",
